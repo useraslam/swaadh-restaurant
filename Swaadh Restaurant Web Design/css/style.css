@@ -1,0 +1,1328 @@
+@font-face {
+  font-family: "Foreplay";
+  font-weight: normal;
+  src: url("../fonts/elements-foreplay-8Y9XJN-2018-08-14/Foreplay.otf")
+    format("opentype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+@media (min-width: 1101px) {
+}
+/* navbar starts */
+
+#nav {
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  display: block;
+  flex-direction: row;
+  z-index: 5;
+}
+
+.nav-center {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em 1em;
+}
+
+.fixed-nav {
+  background-color: rgb(0, 0, 0);
+}
+
+/* .header-main {} */
+
+.logo {
+  width: 150px;
+  padding-left: 2em;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.links {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  list-style: none;
+  padding: 0 1em;
+  margin: 0 2em;
+}
+
+.links li:last-child {
+  padding-right: 0;
+}
+
+.scroll-link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0rem;
+  transition: ease 600ms letter-spacing 0s;
+}
+
+.scroll-link:hover {
+  color: rgb(255, 85, 0);
+  letter-spacing: 0.1rem;
+}
+
+/* navbar ends */
+
+/* banner section starts */
+
+.banner-wrapper {
+}
+.banner {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-top: 0;
+  background-image: url(../Images/fresh-pasta-and-ingredients-P7KKE29.jpg);
+  transform: rotateX(360deg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.container h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 3rem;
+  text-align: center;
+  font-family: Foreplay, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.25em;
+}
+
+.container h1 span {
+  color: rgb(255, 85, 0);
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.25rem;
+}
+
+.container h4 {
+  font-family: MontserratRegular, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  margin: 0.5em;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  position: relative;
+  margin-top: 1em;
+}
+
+.btn-cont {
+  display: inline-flex;
+}
+
+.exploremenu-btn {
+  color: rgb(255, 85, 0);
+  border: 1px solid rgb(255, 85, 0);
+  padding: 0.25em 0.5em;
+  margin: 0.75em;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.exploremenu-btn:hover {
+  color: black;
+  background-color: rgb(255, 85, 0);
+}
+/* about us section starts */
+
+.about-banner {
+  height: 100vh;
+  background-image: url(../Images/about_Us.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: top 50px;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+.about-banner span.span-two {
+  color: black;
+}
+
+.about-banner p {
+  font-size: 0.8rem;
+  color: black;
+  padding: 3em 10em;
+  text-align: center;
+  text-justify: distribute;
+  line-height: 2rem;
+  padding-bottom: 1em;
+}
+
+.readmore-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.readmore-btn {
+  color: rgb(255, 85, 0);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.readmore-line {
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  background-color: rgb(255, 85, 0);
+  transform: translateX(-3em);
+  transition: ease 1s transfrom 0s;
+}
+
+.readmore-btn:hover ~ .readmore-line {
+  transform: translateX(0em);
+}
+
+/* about us section ends */
+
+/* our menu section starts */
+
+.ourmenu-banner {
+  width: 100%;
+  height: 200px;
+  background-image: url(../Images/our-Menu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: rgb(255, 85, 0);
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1em;
+}
+
+.title span {
+  font-family: Foreplay, sans-serif;
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* our menu section ends */
+
+/* contact section starts */
+
+.contact-banner {
+  width: 100%;
+  height: 200px;
+  background-image: url(../Images/contactus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5em 0;
+  margin-bottom: 0;
+  margin-top: 3em;
+}
+
+.contact-banner span.span-two {
+  color: black;
+}
+/* form */
+.form-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: black;
+  margin-bottom: 0;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  position: relative;
+}
+
+.make-reservation {
+  color: white;
+  padding-left: 3em;
+}
+
+.make-reservation h5 {
+  color: white;
+  text-align: center;
+}
+
+.input-group {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+}
+.input-group label {
+  color: rgb(255, 85, 0);
+  font-size: 0.8rem;
+  pointer-events: none;
+  letter-spacing: 0.1rem;
+}
+
+.field {
+  color: rgba(255, 255, 255, 0.829);
+  opacity: 50%;
+  background-color: transparent;
+  outline-style: none;
+  border: none;
+  border-bottom: solid 0.5px white;
+}
+
+.inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.inner-cont {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+}
+
+.field:focus,
+:active {
+  opacity: 100%;
+}
+
+.message {
+  padding: 0;
+  margin: 0;
+  min-width: 500px;
+  max-width: 500px;
+  height: 1.25rem;
+}
+
+.submit-btn {
+  margin: 2em 0;
+  width: 30%;
+  padding: 0.5em 0;
+  align-self: center;
+  background-color: transparent;
+  color: rgb(255, 85, 0);
+  border: 1px solid rgb(255, 85, 0);
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.field:focus {
+  border-bottom: 1px solid rgb(255, 85, 0);
+}
+.field:focus ~ label {
+  color: wheat;
+}
+
+.submit-btn:hover {
+  background-color: rgb(255, 85, 0);
+  color: black;
+}
+
+.submit-btn:focus {
+  outline-style: none;
+}
+
+.res-info-wrapper h5 {
+  color: white;
+}
+
+.res-info-cont {
+  padding: 1em 0;
+}
+
+.res-info-cont h6 {
+  color: rgb(255, 85, 0);
+  padding: 0;
+  margin: 0;
+}
+
+.res-info-cont p {
+  color: white;
+  font-size: 0.7rem;
+  line-height: 1.25rem;
+  font-weight: 100;
+}
+
+.iframe {
+  align-self: center;
+  padding-right: 3.5em;
+}
+
+/* contact section ends */
+
+/* footer starts */
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 85, 0);
+  padding: 0.25em 2em;
+}
+
+.icons {
+}
+
+.icons i {
+  color: white;
+  padding: 0 1.5em;
+}
+
+.socialmedia-links i:hover {
+  color: black;
+}
+
+.payment-icons {
+  padding-right: 1em;
+}
+
+.payment-icons i {
+  color: rgb(255, 255, 255);
+  padding: 0 0.5em;
+}
+
+.scrolltop-link {
+  border: 2px solid rgb(255, 85, 0);
+  border-radius: 0.5em;
+  visibility: hidden;
+  position: fixed;
+  right: 1em;
+  z-index: 1000;
+  bottom: 4em;
+}
+
+.show-link {
+  visibility: visible;
+}
+
+.backto-top {
+  width: 20px;
+  padding: 0.3em;
+  scroll-behavior: smooth;
+  animation-name: scroll-animation;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+@keyframes scroll-animation {
+  0%,
+  50%,
+  100% {
+    transform: translateY(1.5px);
+  }
+  25%,
+  75% {
+    transform: translateY(-1.5px);
+  }
+}
+
+.copy-right {
+  background-color: rgb(255, 85, 0);
+  display: flex;
+  justify-content: center;
+  padding-right: 3.5em;
+}
+
+.copy-right P {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* footer ends */
+@media (min-width: 280px) and (max-width: 479px) {
+  #nav {
+    width: 100%;
+    position: fixed;
+    display: block;
+    flex-direction: row;
+    z-index: 1500;
+  }
+
+  .nav-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    z-index: 1500;
+  }
+
+  /* .header-main {} */
+
+  .nav-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .logo {
+    width: 150px;
+    padding: 1em;
+    margin: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+    padding: 1em;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: rgb(255, 85, 0);
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+    transform: translateY(-110%);
+    transition: ease 1s transform 0s;
+    z-index: -1500;
+  }
+  .show-links {
+    transform: translateY(0%);
+  }
+
+  .links li {
+    width: 100%;
+    list-style: none;
+    padding: 1.5em 1em;
+    margin: 0em 0;
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .links li:hover {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .links li:last-child {
+    padding-right: 1em;
+  }
+
+  .scroll-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0rem;
+    transition: ease 600ms letter-spacing 0s;
+    text-align: center;
+  }
+
+  /* navbar ends */
+  /* navbar ends */
+
+  /* banner section starts */
+  .banner-wrapper {
+  }
+  .banner {
+    background-image: url("../Images/juicy-steak-medium-rare-beef-with-spices-and-tomat-P8SNKPK.jpg");
+  }
+
+  .container h1 {
+    margin-top: 1em;
+    font-size: 2rem;
+    line-height: 1.25em;
+  }
+
+  .container h1 span {
+    font-size: 2rem;
+  }
+
+  .container h4 {
+    font-size: 0.7rem;
+  }
+
+  .exploremenu-btn {
+    margin: 0.75em;
+    font-size: 0.7rem;
+  }
+  /* about us section starts */
+
+  .about-banner {
+    background-position: left;
+  }
+
+  .about-banner p {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    padding: 0em 2em;
+    text-align: left;
+  }
+  .readmore-hover {
+    margin-bottom: 1em;
+  }
+
+  .readmore-btn {
+    font-size: 0.8rem;
+  }
+
+  .readmore-line {
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: rgb(255, 85, 0);
+    margin-top: 3px;
+    transform: translateX(-3em);
+    transition: ease 1s transfrom 0s;
+    z-index: 2;
+  }
+
+  /* about us section ends */
+  #menu {
+    margin-bottom: -3em;
+  }
+  /* form */
+  .form-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+  }
+
+  .make-reservation {
+    color: white;
+    padding-left: 0;
+    font-size: 1.5rem;
+  }
+
+  .res-info-wrapper {
+    align-items: center;
+  }
+
+  .res-info-wrapper h5 {
+    color: white;
+    font-size: 1.35rem;
+  }
+
+  .res-info-cont {
+    padding: 1em 0;
+  }
+
+  .res-info-cont h6 {
+    color: rgb(255, 85, 0);
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .res-info-cont p {
+    font-size: 0.6rem;
+    color: white;
+    font-size: 0.7rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .iframe {
+    display: none;
+  }
+  .input-group {
+    width: 200px;
+  }
+  .inner-cont {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+  }
+
+  .message {
+    min-width: 200px;
+    max-width: 200px;
+  }
+  .copy-right P {
+    font-size: 0.6rem;
+  }
+  .socialmedia-links img {
+    width: 25px;
+  }
+
+  .footer {
+    padding: 0;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .icons {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icons i {
+    color: white;
+  }
+
+  .socialmedia-links i:hover {
+    color: rgb(255, 85, 0);
+  }
+
+  .payment-icons {
+    display: none;
+  }
+
+  .copy-right {
+    width: 100%;
+    padding-right: 0;
+    background-color: rgb(255, 85, 0);
+    margin: 0;
+    padding: 0;
+  }
+
+  .copy-right P {
+    font-size: 0.6rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  #nav {
+    width: 100%;
+    position: fixed;
+    display: block;
+    flex-direction: row;
+    z-index: 1500;
+  }
+
+  .nav-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    z-index: 1500;
+  }
+
+  /* .header-main {} */
+
+  .nav-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 0.5em 0;
+  }
+
+  .logo {
+    width: 150px;
+    padding: 1em;
+    margin: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+    padding: 1em;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 85, 0);
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: ease 1s transform 0s;
+  }
+  .show-links {
+    transform: translateY(0%);
+  }
+
+  .links li {
+    width: 100%;
+    list-style: none;
+    padding: 1.5em 1em;
+    margin: 0.5em 0;
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .links li:hover {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .links li:last-child {
+    padding-right: 1em;
+  }
+
+  .scroll-link {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0rem;
+    transition: ease 600ms letter-spacing 0s;
+    text-align: center;
+  }
+
+  /* navbar ends */
+
+  /* banner section starts */
+  .banner-wrapper {
+  }
+  .banner {
+    background-image: url("../Images/juicy-steak-medium-rare-beef-with-spices-and-tomat-P8SNKPK.jpg");
+  }
+
+  .container h1 {
+    margin-top: 1em;
+    font-size: 3rem;
+    line-height: 1.25em;
+  }
+
+  .container h1 span {
+    font-size: 3.5rem;
+  }
+
+  .container h4 {
+    font-size: 1rem;
+  }
+
+  .exploremenu-btn {
+    margin: 0.75em;
+    font-size: 1rem;
+  }
+  /* about us section starts */
+  .about-banner {
+    background-position: center top;
+  }
+
+  .about-banner p {
+    font-size: 0.9rem;
+    line-height: 1.75rem;
+    padding: 2.5em 4em;
+    text-align: left;
+  }
+  .readmore-hover {
+    margin-bottom: 2em;
+  }
+
+  .readmore-btn {
+    font-size: 1rem;
+  }
+
+  .readmore-line {
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: rgb(255, 85, 0);
+    margin-top: 3px;
+    transform: translateX(-3em);
+    transition: ease 1s transfrom 0s;
+    z-index: 2;
+  }
+
+  /* about us section ends */
+  #menu {
+    margin-bottom: -3em;
+  }
+  /* form */
+  .form-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+  }
+
+  .make-reservation {
+    color: white;
+    padding-left: 0;
+    font-size: 1.5rem;
+  }
+
+  .res-info-wrapper {
+    align-items: center;
+  }
+
+  .res-info-wrapper h5 {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .res-info-cont {
+    padding: 1em 0;
+  }
+
+  .res-info-cont h6 {
+    color: rgb(255, 85, 0);
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .res-info-cont p {
+    font-size: 0.6rem;
+    color: white;
+    font-size: 0.7rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .iframe {
+    align-self: center;
+    padding-right: 0;
+  }
+  .input-group {
+    width: 350px;
+  }
+
+  .message {
+    min-width: 350px;
+    max-width: 350px;
+  }
+  .copy-right P {
+    font-size: 0.6rem;
+  }
+  .socialmedia-links img {
+    width: 25px;
+  }
+
+  .footer {
+    padding: 0;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .icons {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icons i {
+    color: white;
+  }
+
+  .socialmedia-links i:hover {
+    color: rgb(255, 85, 0);
+  }
+
+  .payment-icons {
+    display: none;
+  }
+
+  .copy-right {
+    width: 100%;
+    padding-right: 0;
+    background-color: rgb(255, 85, 0);
+    margin: 0;
+    padding: 0;
+  }
+
+  .copy-right P {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+  #nav {
+    width: 100vw;
+  }
+
+  .nav-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    z-index: 1500;
+  }
+
+  /* .header-main {} */
+
+  .nav-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 1em 0;
+  }
+
+  .logo {
+    width: 150px;
+    padding: 1em;
+    margin: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+    padding: 1em;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 85, 0);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: ease 1s transform 0s;
+  }
+  .show-links {
+    transform: translateY(0%);
+  }
+
+  .links li {
+    width: 100%;
+    list-style: none;
+    padding: 2em 1em;
+    margin: 1em 0;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .links li:hover {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .links li:last-child {
+    padding-right: 1em;
+  }
+
+  .scroll-link {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0rem;
+    transition: ease 600ms letter-spacing 0s;
+    text-align: center;
+  }
+
+  /* navbar ends */
+
+  /* banner section starts */
+  .banner-wrapper {
+  }
+  .banner {
+    background-image: url("../Images/juicy-steak-medium-rare-beef-with-spices-and-tomat-P8SNKPK.jpg");
+  }
+
+  .container h1 {
+    margin-top: 1em;
+    font-size: 5rem;
+    line-height: 1.25em;
+  }
+
+  .container h1 span {
+    font-size: 6rem;
+  }
+
+  .container h4 {
+    font-size: 1.5rem;
+  }
+
+  .exploremenu-btn {
+    color: rgb(255, 85, 0);
+    border: 1px solid rgb(255, 85, 0);
+    padding: 0.5em 0.5em;
+    margin: 1em 1em;
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+
+  /* about us section starts */
+  .about-banner {
+    background-position: center top;
+  }
+
+  .about-banner p {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 2.5em 4em;
+    text-align: left;
+  }
+  .readmore-hover {
+    margin-bottom: 2em;
+  }
+
+  .readmore-btn {
+    font-size: 1rem;
+  }
+
+  .readmore-line {
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: rgb(255, 85, 0);
+    margin-top: 3px;
+    transform: translateX(-3em);
+    transition: ease 1s transfrom 0s;
+    z-index: 2;
+  }
+
+  /* about us section ends */
+  #menu {
+    margin-bottom: -3em;
+  }
+  /* form */
+  .form-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+  }
+
+  .make-reservation {
+    color: white;
+    padding-left: 0;
+    font-size: 1.5rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+  }
+
+  .input-group label {
+    font-size: 1rem;
+  }
+
+  .res-info-wrapper {
+    align-items: center;
+  }
+
+  .res-info-wrapper h5 {
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .res-info-cont {
+    padding: 1em 0;
+  }
+
+  .res-info-cont h6 {
+    color: rgb(255, 85, 0);
+    font-size: 1.25rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .res-info-cont p {
+    color: white;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .iframe {
+    align-self: center;
+    padding-left: 3em;
+  }
+  .input-group {
+    width: 500px;
+  }
+
+  .message {
+    min-width: 500px;
+    max-width: 500px;
+  }
+  .copy-right P {
+    font-size: 0.6rem;
+  }
+  .socialmedia-links img {
+    width: 25px;
+  }
+
+  .footer {
+    padding: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .icons {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icons i {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .socialmedia-links i:hover {
+    color: rgb(255, 85, 0);
+  }
+
+  .payment-icons {
+    display: none;
+  }
+
+  .copy-right {
+    width: 100%;
+    padding-right: 0;
+    background-color: rgb(255, 85, 0);
+    margin: 0;
+    padding: 0;
+  }
+
+  .copy-right P {
+    font-size: 0.9rem;
+  }
+}
+
+/* @media (min-width:992px) and (max-width: 1300px) {
+    .about-banner p {
+        padding: 3em 15em;
+    }
+
+    .input-group {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        padding: 1em 0;
+    }
+
+    .message {
+        max-width: 400px;
+        min-width: 400px;
+    }
+    .iframe {
+        align-self: center;
+        padding-right: 3em;
+    }
+
+}
+@media(min-width:1201px) and (max-width: 1400px) {
+    .about-banner p {
+        padding: 3em 15em;
+    }
+
+
+} */
